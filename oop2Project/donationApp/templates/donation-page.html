@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{% static 'donation-page.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hind Siliguri:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    <form class="donation-page" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <img
+        class="icon5"
+        loading="lazy"
+        alt=""
+        src="{% static 'public/7157414-2@2x.png' %}"
+      />
+
+      <section class="donation-page-child"></section>
+      <h1 class="give-hope-change3">Give hope, change lives, spread love.</h1>
+      {% if request.user.is_authenticated %}
+      <div class="rectangle-parent33">
+        <div class="frame-child87"></div>
+        <input class="name1" placeholder="Name" required value="{{request.user.first_name}}" type="text" /></div>
+      </div>
+      <div class="donation-page-child1"><input class="name1" value="{{request.user}}" type="text" name="username"/></div></div>
+      {% else %}
+      <div class="rectangle-parent33">
+        <div class="frame-child87"></div>
+        <input class="name1" required placeholder="Name" type="text" name="name" /></div>
+      </div>
+      <div class="donation-page-child1"><input class="name1" value="Username" type="text" name="username"/></div></div>
+      <!-- <div class="donation-page-inner"><input class="name1" placeholder="You can enter a username" type="text" name="username"/></div></div> -->
+      {% endif %}
+      <div class="donation-page-inner"><input class="name1" required placeholder="Amount" type="number" name="amount"/></div></div>
+      
+      <div class="donation-page-item"><input class="name1" required placeholder="Enter the number you want to contact by" type="text" name="donation_number" /></div>
+      <button class="donate-wrapper">
+        <b class="donate">Donate</b>
+      </button>
+    </form>
+  </body>
+</html>

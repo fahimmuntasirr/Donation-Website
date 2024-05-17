@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hind Siliguri:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="donation">
+      <div class="donation-inner">
+        <div class="rectangle-parent2">
+          <div class="frame-child27"></div>
+          <div class="frame-child28"></div>
+        </div>
+      </div>
+      <div class="div4"></div>
+      <div class="donation-child"></div>
+      <main class="frame-main">
+        <header class="frame-header">
+          <div class="parent3">
+            <img
+              class="icon2"
+              loading="lazy"
+              alt=""
+              src="{% static 'public/7157414-2@2x.png' %}"
+            />
+
+            <nav class="frame-nav">
+              <nav class="home-button-parent">
+                <div class="home-button"><a href="/" style="text-decoration: none;">Home</a></div>
+                <div class="about-button"><a href="#about1" style="text-decoration: none;">About</a></div>
+                <div class="causes-button"><a href="#about1" style="text-decoration: none;">Causes</a></div>
+                <div class="pages-button"><a href="#about1" style="text-decoration: none;">Pages</a></div>
+                <div class="blog"><a href="/" style="text-decoration: none;">Blog</a></div>
+                {% if request.user.is_authenticated %}
+                <div class="blog"><a href="/profile/{{user.username}}" style="text-decoration: none;">{{request.user.first_name|default:"Admin"|add:request.user.last_name}}</a></div>
+                {% endif %}
+              </nav>
+            </nav>
+            <div class="instance-wrapper">
+              <button class="support-now-wrapper">
+                {% if request.user.is_authenticated %}
+                <b class="support-now"><a href="/logout_page/" style="text-decoration: none;">Log out</a></b>
+                {% else %}
+                <b class="support-now"><a href="/login_page/" style="text-decoration: none;">Log in</a></b>
+                {% endif %}
+              </button>
+            </div>
+          </div>
+        </header>
+        <section class="frame-section">
+          <div class="frame-parent9">
+            <div class="frame-wrapper5">
+              <div class="frame-parent10">
+                <div class="frame-wrapper6">
+                  <div class="frame-parent11">
+                    <div class="frame-parent12">
+                      <div class="help-the-poor-families-parent">
+                        <h3 class="help-the-poor">Help The Poor Families</h3>
+                        <h1 class="give-hope-change-container1">
+                          <p class="give-hope-change1">
+                            Give hope, change lives,
+                          </p>
+                          <p class="spread-love1">spread love.</p>
+                        </h1>
+                      </div>
+                      <div class="we-help-local-container1">
+                        <p class="we-help-local1">
+                          We help local nonprofits accesss the funding tools,
+                        </p>
+                        <p class="training-and-support1">
+                          training, and support they need to become more.
+                        </p>
+                      </div>
+                      <button class="support-now-container">
+                        <b class="support-now1"><a href="#toThatView" style="text-decoration: none; color: white;">Support Now</a></b>
+                      </button>
+                    </div>
+                    <div class="frame-parent13">
+                      <div class="frame-parent14">
+                        <div class="k-wrapper">
+                          <b class="k">15K</b>
+                        </div>
+                        <div class="incredible-volunters">
+                          <p class="incredible">Incredible</p>
+                          <p class="volunters">Volunters</p>
+                        </div>
+                      </div>
+                      <div class="parent4">
+                        <b class="b">100+</b>
+                        <div class="successful-campagins">
+                          <p class="successful">Successful</p>
+                          <p class="campagins">Campagins</p>
+                        </div>
+                      </div>
+                      <div class="parent5">
+                        <b class="b1">600+</b>
+                        <div class="money-donors-wrapper">
+                          <div class="money-donors">
+                            <p class="money">Money</p>
+                            <p class="donors">Donors</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-parent15">
+                  <div class="wrapper-rectangle-1-parent">
+                    <div class="wrapper-rectangle-11">
+                      <img
+                        class="wrapper-rectangle-1-item"
+                        loading="lazy"
+                        alt=""
+                        src="{% static 'public/rectangle-11@2x.png' %}"
+                      />
+                    </div>
+                    <div class="wrapper-rectangle-31">
+                      <img
+                        class="wrapper-rectangle-3-item"
+                        loading="lazy"
+                        alt=""
+                        src="{% static 'public/rectangle-31@2x.png' %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="frame-wrapper7">
+                    <div class="frame-parent16">
+                      <div class="rectangle-parent3">
+                        <div class="frame-child29"></div>
+                        <div class="wrapper-rectangle-21">
+                          <img
+                            class="wrapper-rectangle-2-item"
+                            loading="lazy"
+                            alt=""
+                            src="{% static 'public/rectangle-21@2x.png' %}"
+                          />
+                        </div>
+                      </div>
+                      <div class="wrapper-rectangle-41">
+                        <img
+                          class="wrapper-rectangle-4-item"
+                          loading="lazy"
+                          alt=""
+                          src="{% static 'public/rectangle-41@2x.png' %}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper8">
+              <div class="frame-parent17">
+                <div class="how-could-you-help-wrapper">
+                  <h1 class="how-could-you">How Could You Help?</h1>
+                </div>
+                <div class="frame-parent18">
+                  <div class="rectangle-parent4">
+                    <div class="frame-child30"></div>
+                    <div class="frame-parent19">
+                      <div class="solid-wrapper">
+                        <img
+                          class="solid-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{% static 'public/solid.svg' %}"
+                        />
+                      </div>
+                      <div class="become-voluenteer-wrapper">
+                        <h3 class="become-voluenteer">Become Voluenteer</h3>
+                      </div>
+                      <h3 class="you-can-contribute-container">
+                        <p class="you-can-contribute">
+                          You Can Contribute Your time,
+                        </p>
+                        <p class="skills-and-knowledge">
+                          Skills and knowledge through
+                        </p>
+                        <p class="volunteering-with-the">
+                          volunteering with the UN
+                        </p>
+                      </h3>
+                    </div>
+                    <div class="read-more-wrapper">
+                      <div class="read-more">Read more</div>
+                    </div>
+                  </div>
+                  <div class="rectangle-parent5">
+                    <div class="frame-child31"></div>
+                    <div class="frame-parent20">
+                      <div class="solid-container">
+                        <img
+                          class="solid-icon1"
+                          alt=""
+                          src="{% static 'public/solid-1.svg' %}"
+                        />
+                      </div>
+                      <div class="call-for-donation-wrapper">
+                        <h3 class="call-for-donation">Call for donation</h3>
+                      </div>
+                      <h3 class="you-can-contribute-container1">
+                        <p class="you-can-contribute1">
+                          You Can Contribute Your time,
+                        </p>
+                        <p class="skills-and-knowledge1">
+                          Skills and knowledge through
+                        </p>
+                        <p class="volunteering-with-the1">
+                          volunteering with the UN
+                        </p>
+                      </h3>
+                    </div>
+                    <div class="read-more-container">
+                      <div class="read-more1">Read more</div>
+                    </div>
+                  </div>
+                  <div class="rectangle-parent6">
+                    <div class="frame-child32"></div>
+                    <div class="frame-parent21">
+                      <div class="solid-frame">
+                        <img
+                          class="solid-icon2"
+                          alt=""
+                          src="{% static 'public/solid-2.svg' %}"
+                        />
+                      </div>
+                      <div class="send-donation-wrapper">
+                        <h3 class="send-donation">Send donation</h3>
+                      </div>
+                      <h3 class="you-can-contribute-container2">
+                        <p class="you-can-contribute2">
+                          You Can Contribute Your time,
+                        </p>
+                        <p class="skills-and-knowledge2">
+                          Skills and knowledge through
+                        </p>
+                        <p class="volunteering-with-the2">
+                          volunteering with the UN
+                        </p>
+                      </h3>
+                    </div>
+                    <div class="read-more-frame">
+                      <div class="read-more2">Read more</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-to-donate-wrapper">
+                  <h1 class="latest-to-donate">Latest to donate</h1>
+                </div>
+                <div class="frame-parent22">
+                  <div class="frame-wrapper9">
+                    <div class="rectangle-parent7">
+                      <div class="frame-child33"></div>
+                      <img
+                        class="rectangle-icon"
+                        loading="lazy"
+                        alt=""
+                        src="{% static 'public/rectangle-9@2x.png' %}"
+                      />
+
+                      <div class="help-flood-victims-in-banglade-parent" id="toThatView">
+                        <div class="help-flood-victims">
+                          Help flood victims in Bangladesh
+                        </div>
+                        <div class="help-flood-victims-in-banglade-group">
+                          <div class="help-flood-victims1">
+                            Help flood victims in Bangladesh by donating
+                            sincerely, regardless of the people for help.
+                          </div>
+                          <div class="goals-1200-parent">
+                            <div class="goals-1200">
+                              <span>Goals: </span>
+                              <span class="span">120000 tk</span>
+                            </div>
+                            <div class="raised-1200">
+                              <span>Raised: </span>
+                              <span class="span1">
+                                {% for query in q %}
+                                {% if query.name == 'first' %}
+                                {{ query.raised }} tk
+                                {% endif %}
+                                {% endfor %}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-parent23">
+                          <div class="unsplashb4tjxni0y2c-parent">
+                            <img
+                              class="unsplashb4tjxni0y2c-icon"
+                              alt=""
+                              src="{% static 'public/unsplashb4tjxni0y2c@2x.png' %}"
+                            />
+
+                            <img
+                              class="unsplashd2msdujjl2g-icon"
+                              alt=""
+                              src="{% static 'public/unsplashd2msdujjl2g@2x.png' %}"
+                            />
+
+                            <img
+                              class="unsplashrdeovte7vos-icon"
+                              loading="lazy"
+                              alt=""
+                              src="{% static 'public/unsplashrdeovte7vos@2x.png' %}"
+                            />
+
+                            <div class="unsplash6xv4a1va1ru-parent">
+                              <div class="unsplash6xv4a1va1ru"></div>
+                              <b class="b2">19+</b>
+                            </div>
+                          </div>
+                          <button class="support-now-frame">
+                            <b class="support-now2"><a href="/donation_page/first/" style="text-decoration: none; color: white;">Donate</a></b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame-wrapper10">
+                    <div class="rectangle-parent8">
+                      <div class="frame-child34"></div>
+                      <img
+                        class="frame-child35"
+                        alt=""
+                        src="{% static 'public/rectangle-9-1@2x.png' %}"
+                      />
+
+                      <div class="donation-for-covid-19-in-bangl-parent">
+                        <div class="donation-for-covid-19">
+                          Donation for COVID-19 in Bangladesh
+                        </div>
+                        <div class="help-flood-victims-in-banglade-container">
+                          <div class="help-flood-victims2">
+                            Help flood victims in Bangladesh by donating
+                            sincerely, regardless of the people for help.
+                          </div>
+                          <div class="goals-1200-group">
+                            <div class="goals-12001">
+                              <span>Goals: </span>
+                              <span class="span2">120000 tk</span>
+                            </div>
+                            <div class="raised-12001">
+                              <span>Raised: </span>
+                              <span class="span3">
+                                {% for query in q %}
+                                {% if query.name == 'second' %}
+                                {{ query.raised }} tk
+                                {% endif %}
+                                {% endfor %}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-parent24">
+                          <div class="unsplashb4tjxni0y2c-group">
+                            <img
+                              class="unsplashb4tjxni0y2c-icon1"
+                              alt=""
+                              src="{% static 'public/unsplashb4tjxni0y2c@2x.png' %}"
+                            />
+
+                            <img
+                              class="unsplashd2msdujjl2g-icon1"
+                              alt=""
+                              src="{% static 'public/unsplashd2msdujjl2g@2x.png' %}"
+                            />
+
+                            <img
+                              class="unsplashrdeovte7vos-icon1"
+                              alt=""
+                              src="{% static 'public/unsplashrdeovte7vos@2x.png' %}"
+                            />
+
+                            <div class="unsplash6xv4a1va1ru-group">
+                              <div class="unsplash6xv4a1va1ru1"></div>
+                              <b class="b3">19+</b>
+                            </div>
+                          </div>
+                          <button class="frame-button">
+                            <b class="support-now3"><a href="/donation_page/second/" style="text-decoration: none; color: white;">Donate</a></b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame-wrapper11">
+                    <div class="rectangle-parent9">
+                      <div class="frame-child36"></div>
+                      <img
+                        class="frame-child37"
+                        alt=""
+                        src="{% static 'public/rectangle-9-2@2x.png' %}"
+                      />
+
+                      <div class="help-homeless-cat-to-find-home-parent">
+                        <div class="help-homeless-cat">
+                          Help Homeless cat to find home
+                        </div>
+                        <div class="help-flood-victims-in-banglade-parent1">
+                          <div class="help-flood-victims3">
+                            Help flood victims in Bangladesh by donating
+                            sincerely, regardless of the people for help.
+                          </div>
+                          <div class="goals-1200-container">
+                            <div class="goals-12002">
+                              <span>Goals: </span>
+                              <span class="span4">120000 tk</span>
+                            </div>
+                            <div class="raised-12002">
+                              <span>Raised: </span>
+                              <span class="span5">
+                                {% for query in q %}
+                                {% if query.name == 'third' %}
+                                {{ query.raised }} tk
+                                {% endif %}
+                                {% endfor %}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-parent25">
+                          <div class="unsplashb4tjxni0y2c-container">
+                            <img
+                              class="unsplashb4tjxni0y2c-icon2"
+                              alt=""
+                              src="{% static 'public/unsplashb4tjxni0y2c@2x.png' %}"
+                            />
+
+                            <img
+                              class="unsplashd2msdujjl2g-icon2"
+                              alt=""
+                              src="{% static 'public/unsplashd2msdujjl2g@2x.png' %}"
+                            />
+
+                            <img
+                              class="unsplashrdeovte7vos-icon2"
+                              alt=""
+                              src="{% static 'public/unsplashrdeovte7vos@2x.png' %}"
+                            />
+
+                            <div class="unsplash6xv4a1va1ru-container">
+                              <div class="unsplash6xv4a1va1ru2"></div>
+                              <b class="b4">19+</b>
+                            </div>
+                          </div>
+                          <button class="support-now-wrapper1">
+                            <b class="support-now4"><a href="/donation_page/third/" style="text-decoration: none; color: white;">Donate</a></b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper12">
+              <div class="frame-parent26">
+                <div class="frame-wrapper13">
+                  <div class="rectangle-parent10">
+                    <div class="frame-child38"></div>
+                    <img
+                      class="frame-child39"
+                      alt=""
+                      src="{% static 'public/rectangle-9-3@2x.png' %}"
+                    />
+
+                    <div class="help-save-poor-children-in-ban-parent">
+                      <div class="help-save-poor">
+                        Help save poor children in Bangladesh
+                      </div>
+                      <div class="help-flood-victims-in-banglade-parent2">
+                        <div class="help-flood-victims4">
+                          Help flood victims in Bangladesh by donating
+                          sincerely, regardless of the people for help.
+                        </div>
+                        <div class="goals-1200-parent1">
+                          <div class="goals-12003">
+                            <span>Goals: </span>
+                            <span class="span6">120000 tk</span>
+                          </div>
+                          <div class="raised-12003">
+                            <span>Raised: </span>
+                            <span class="span7">
+                              {% for query in q %}
+                                {% if query.name == 'fourth' %}
+                                {{ query.raised }} tk
+                                {% endif %}
+                              {% endfor %}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frame-parent27">
+                        <div class="unsplashb4tjxni0y2c-parent1">
+                          <img
+                            class="unsplashb4tjxni0y2c-icon3"
+                            alt=""
+                            src="{% static 'public/unsplashb4tjxni0y2c@2x.png' %}"
+                          />
+
+                          <img
+                            class="unsplashd2msdujjl2g-icon3"
+                            alt=""
+                            src="{% static 'public/unsplashd2msdujjl2g@2x.png' %}"
+                          />
+
+                          <img
+                            class="unsplashrdeovte7vos-icon3"
+                            alt=""
+                            src="{% static 'public/unsplashrdeovte7vos@2x.png' %}"
+                          />
+
+                          <div class="unsplash6xv4a1va1ru-parent1">
+                            <div class="unsplash6xv4a1va1ru3"></div>
+                            <b class="b5">19+</b>
+                          </div>
+                        </div>
+                        <button class="support-now-wrapper2">
+                          <b class="support-now5"><a href="/donation_page/fourth/" style="text-decoration: none; color: white;">Donate</a></b>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-wrapper14">
+                  <div class="rectangle-parent11">
+                    <div class="frame-child40"></div>
+                    <img
+                      class="frame-child41"
+                      alt=""
+                      src="{% static 'public/rectangle-9-4@2x.png' %}"
+                    />
+
+                    <div class="lifeskills-for-children-in-ban-parent">
+                      <div class="lifeskills-for-children">
+                        Lifeskills for children in Bangladesh
+                      </div>
+                      <div class="help-flood-victims-in-banglade-parent3">
+                        <div class="help-flood-victims5">
+                          Help flood victims in Bangladesh by donating
+                          sincerely, regardless of the people for help.
+                        </div>
+                        <div class="goals-1200-parent2">
+                          <div class="goals-12004">
+                            <span>Goals: </span>
+                            <span class="span8">120000 tk</span>
+                          </div>
+                          <div class="raised-12004">
+                            <span>Raised: </span>
+                            <span class="span9">
+                              {% for query in q %}
+                                {% if query.name == 'fifth' %}
+                                ${{ query.raised }} tk
+                                {% endif %}
+                                {% endfor %}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frame-parent28">
+                        <div class="unsplashb4tjxni0y2c-parent2">
+                          <img
+                            class="unsplashb4tjxni0y2c-icon4"
+                            alt=""
+                            src="{% static 'public/unsplashb4tjxni0y2c@2x.png' %}"
+                          />
+
+                          <img
+                            class="unsplashd2msdujjl2g-icon4"
+                            alt=""
+                            src="{% static 'public/unsplashd2msdujjl2g@2x.png' %}"
+                          />
+
+                          <img
+                            class="unsplashrdeovte7vos-icon4"
+                            alt=""
+                            src="{% static 'public/unsplashrdeovte7vos@2x.png' %}"
+                          />
+
+                          <div class="unsplash6xv4a1va1ru-parent2">
+                            <div class="unsplash6xv4a1va1ru4"></div>
+                            <b class="b6">19+</b>
+                          </div>
+                        </div>
+                        <button class="support-now-wrapper3">
+                          <b class="support-now6"><a href="/donation_page/fifth/" style="text-decoration: none; color: white;">Donate</a></b>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-wrapper15">
+                  <div class="rectangle-parent12">
+                    <div class="frame-child42"></div>
+                    <img
+                      class="frame-child43"
+                      alt=""
+                      src="{% static 'public/rectangle-9-5@2x.png' %}"
+                    />
+
+                    <div class="help-donate-for-children-with-parent">
+                      <div class="help-donate-for">
+                        Help donate for children with cancer
+                      </div>
+                      <div class="help-flood-victims-in-banglade-parent4">
+                        <div class="help-flood-victims6">
+                          Help flood victims in Bangladesh by donating
+                          sincerely, regardless of the people for help.
+                        </div>
+                        <div class="goals-1200-parent3">
+                          <div class="goals-12005">
+                            <span>Goals: </span>
+                            <span class="span10">120000 tk</span>
+                          </div>
+                          <div class="raised-12005">
+                            <span>Raised: </span>
+                            <span class="span11">
+                              {% for query in q %}
+                              {% if query.name == 'sixth' %}
+                              ${{ query.raised }} tk
+                              {% endif %}
+                              {% endfor %}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frame-parent29">
+                        <div class="unsplashb4tjxni0y2c-parent3">
+                          <img
+                            class="unsplashb4tjxni0y2c-icon5"
+                            alt=""
+                            src="{% static 'public/unsplashb4tjxni0y2c@2x.png' %}"
+                          />
+
+                          <img
+                            class="unsplashd2msdujjl2g-icon5"
+                            alt=""
+                            src="{% static 'public/unsplashd2msdujjl2g@2x.png' %}"
+                          />
+
+                          <img
+                            class="unsplashrdeovte7vos-icon5"
+                            alt=""
+                            src="{% static 'public/unsplashrdeovte7vos@2x.png' %}"
+                          />
+
+                          <div class="unsplash6xv4a1va1ru-parent3">
+                            <div class="unsplash6xv4a1va1ru5"></div>
+                            <b class="b7">19+</b>
+                          </div>
+                        </div>
+                        <button class="support-now-wrapper4">
+                          <b class="support-now7"><a href="/donation_page/sixth/" style="text-decoration: none; color: white;">Donate</a></b>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper16">
+              <div class="frame-parent30">
+                <div class="fundraising-events-wrapper">
+                  <h1 class="fundraising-events">Fundraising Events</h1>
+                </div>
+                <div class="frame-parent31">
+                  <div class="wrapper-group-4-parent">
+                    <div class="wrapper-group-4">
+                      <img
+                        class="wrapper-group-4-child"
+                        alt=""
+                        src="{% static 'public/group-4@2x.png' %}"
+                      />
+                    </div>
+                    <h3 class="donate-for-the-container">
+                      <p class="donate-for-the">Donate for the poor</p>
+                      <p class="children">children</p>
+                    </h3>
+                    <div class="frame-wrapper17">
+                      <button class="aug-wrapper">
+                        <div class="aug">5 Aug</div>
+                      </button>
+                    </div>
+                    <div class="rectangle-parent13">
+                      <div class="frame-child44"></div>
+                      <div class="group-parent">
+                        <img
+                          class="group-icon"
+                          alt=""
+                          src="{% static 'public/group.svg' %}"
+                        />
+
+                        <div class="pm-500pm">2:00PM-5:00PM</div>
+                      </div>
+                      <div class="vector-parent">
+                        <img
+                          class="vector-icon6"
+                          alt=""
+                          src="{% static 'public/vector1.svg' %}"
+                        />
+
+                        <div class="dhaka">Dhaka</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wrapper-group-4-group">
+                    <div class="wrapper-group-41">
+                      <img
+                        class="wrapper-group-4-item"
+                        alt=""
+                        src="{% static 'public/group-4-1@2x.png' %}"
+                      />
+                    </div>
+                    <h3 class="lets-collaborate-for-container">
+                      <p class="lets-collaborate-for">
+                        Lets Collaborate for clean water
+                      </p>
+                      <p class="for-dhaka">for Dhaka</p>
+                    </h3>
+                    <div class="frame-wrapper18">
+                      <button class="aug-container">
+                        <div class="aug1">8 Aug</div>
+                      </button>
+                    </div>
+                    <div class="rectangle-parent14">
+                      <div class="frame-child45"></div>
+                      <div class="group-group">
+                        <img
+                          class="group-icon1"
+                          alt=""
+                          src="{% static 'public/group.svg' %}"
+                        />
+
+                        <div class="pm-500pm1">2:00PM-5:00PM</div>
+                      </div>
+                      <div class="vector-group">
+                        <img
+                          class="vector-icon7"
+                          alt=""
+                          src="{% static 'public/vector1.svg' %}"
+                        />
+
+                        <div class="dhaka1">Dhaka</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wrapper-group-4-container">
+                    <div class="wrapper-group-42">
+                      <img
+                        class="wrapper-group-4-inner"
+                        alt=""
+                        src="{% static 'public/group-4-2@2x.png' %}"
+                      />
+                    </div>
+                    <h3 class="help-donate-for-container">
+                      <p class="help-donate-for1">
+                        Help donate for children with
+                      </p>
+                      <p class="cancer">cancer</p>
+                    </h3>
+                    <div class="frame-wrapper19">
+                      <button class="aug-frame">
+                        <div class="aug2">10 Aug</div>
+                      </button>
+                    </div>
+                    <div class="rectangle-parent15">
+                      <div class="frame-child46"></div>
+                      <div class="group-container">
+                        <img
+                          class="group-icon2"
+                          alt=""
+                          src="{% static 'public/group.svg' %}"
+                        />
+
+                        <div class="pm-500pm2">2:00PM-5:00PM</div>
+                      </div>
+                      <div class="vector-parent1">
+                        <img
+                          class="vector-icon8"
+                          alt=""
+                          src="{% static 'public/vector1.svg' %}"
+                        />
+
+                        <div class="dhaka2">Dhaka</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-parent32">
+              <div class="frame-parent33">
+                <div class="frame-wrapper20">
+                  <div class="rectangle-parent16">
+                    <img
+                      class="frame-child47" id="about1"
+                      alt=""
+                      src="{% static 'public/rectangle-111@2x.png' %}"
+                    />
+
+                    <img
+                      class="frame-child48"
+                      loading="lazy"
+                      alt=""
+                      src="{% static 'public/rectangle-121@2x.png' %}"
+                    />
+                  </div>
+                </div>
+                <div class="frame-wrapper21">
+                  <div class="ellipse-parent">
+                    <img
+                      class="ellipse-icon"
+                      loading="lazy"
+                      alt=""
+                      src="{% static 'public/fahim.jpg' %}"
+                    />
+
+                    <div class="it-is-long-established-fact-th-parent">
+                      <h3 class="it-is-long-container">
+                        <p class="it-is-long">
+                          It is long established fact that reader will distract
+                          by the readable
+                        </p>
+                        <p class="content-a-page">
+                          content a page when looking atten layout. The point of
+                          using and
+                        </p>
+                        <p class="that-it-has">
+                          that it has a normal distribution of letters.
+                        </p>
+                      </h3>
+                      <div class="rimon-khan-parent">
+                        <h1 class="rimon-khan">Fahim Muntasir</h1>
+                        <div class="senior-volunteer">Senior Volunteer</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="our-gallery-wrapper">
+                <h1 class="our-gallery">Our Gallery</h1>
+              </div>
+              <div class="frame-wrapper22">
+                <div class="rectangle-parent17">
+                  <img
+                    class="frame-child49"
+                    loading="lazy"
+                    alt=""
+                    src="{% static 'public/rectangle-13@2x.png' %}"
+                  />
+
+                  <img
+                    class="frame-child50"
+                    loading="lazy"
+                    alt=""
+                    src="{% static 'public/rectangle-14@2x.png' %}"
+                  />
+
+                  <img
+                    class="frame-child51"
+                    loading="lazy"
+                    alt=""
+                    src="{% static 'public/rectangle-15@2x.png' %}"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper23">
+              <div class="rectangle-parent18">
+                <img
+                  class="frame-child52"
+                  alt=""
+                  src="{% static 'public/rectangle-13-1@2x.png' %}"
+                />
+
+                <img
+                  class="frame-child53"
+                  alt=""
+                  src="{% static 'public/rectangle-14-1@2x.png' %}"
+                />
+
+                <img
+                  class="frame-child54"
+                  alt=""
+                  src="{% static 'public/rectangle-15-1@2x.png' %}"
+                />
+              </div>
+            </div>
+            <div class="frame-wrapper24">
+              <div class="ready-to-learn-more-parent">
+                <h1 class="ready-to-learn">Ready To learn More?</h1>
+                <div class="frame-27-input">
+                  <div class="vector-parent2">
+                    <img
+                      class="vector-icon9"
+                      alt=""
+                      src="{% static 'public/vector-3.svg' %}"
+                    />
+
+                    <input class="enter-your-email" type="text" placeholder="Enter Your Email...">
+                  </div>
+                  <button class="join-now-wrapper">
+                    <div class="join-now">Join Now</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="frame-footer">
+          <div class="frame-parent34">
+            <div class="parent6">
+              <img
+                class="icon3"
+                loading="lazy"
+                alt=""
+                src="{% static 'public/7157414-3@2x.png' %}"
+              />
+
+              <div class="welcome-and-open-container">
+                <p class="welcome-and-open">
+                  Welcome and open yourself to your
+                </p>
+                <p class="truest-love-this">
+                  truest love this year with us! with the
+                </p>
+                <p class="release-process">Release Process</p>
+              </div>
+              <img
+                class="frame-child55"
+                loading="lazy"
+                alt=""
+                src="{% static 'public/group-12.svg' %}"
+              />
+            </div>
+            <div class="frame-parent35">
+              <div class="quick-link-parent">
+                <h1 class="quick-link">Quick Link</h1>
+                <div class="about-us-parent">
+                  <h3 class="about-us">About US</h3>
+                  <h3 class="causes">Causes</h3>
+                  <h3 class="events">Events</h3>
+                  <h3 class="volunteers">Volunteers</h3>
+                  <h3 class="contact">Contact</h3>
+                </div>
+              </div>
+              <div class="our-address-parent">
+                <h1 class="our-address">Our Address</h1>
+                <div class="would-you-have-container">
+                  <p class="would-you-have">
+                    Would you have any enquiries. please feel
+                  </p>
+                  <p class="free-to-contact">free to contact</p>
+                </div>
+                <div class="frame-parent36">
+                  <div class="vector-parent3">
+                    <img
+                      class="vector-icon10"
+                      alt=""
+                      src="{% static 'public/vector-4.svg' %}"
+                    />
+
+                    <div class="nomanabdullah688gmailcom">
+                      nomanabdullah688@gmail.com
+                    </div>
+                  </div>
+                  <div class="group-parent1">
+                    <img
+                      class="group-icon3"
+                      alt=""
+                      src="{% static 'public/group-3.svg' %}"
+                    />
+
+                    <div class="div5">01644859378</div>
+                  </div>
+                  <div class="zondiconslocation-parent">
+                    <img
+                      class="zondiconslocation"
+                      alt=""
+                      src="{% static 'public/zondiconslocation.svg' %}"
+                    />
+
+                    <div class="savar-dhaka">Savar, Dhaka</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

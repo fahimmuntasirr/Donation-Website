@@ -1,0 +1,69 @@
+.background-icon {
+  position: absolute;
+  top: 3px;
+  left: 140px;
+  width: 114px;
+  height: 114px;
+  object-fit: cover;
+}
+.thank-you-for1 {
+  position: absolute;
+  top: 278px;
+  left: calc(50% - 285px);
+}
+.line-mdcircle-to-confirm-circ-icon {
+  position: absolute;
+  top: 338px;
+  left: calc(50% - 141px);
+  width: 282px;
+  height: 282px;
+  overflow: hidden;
+}
+.back-to-home {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.back-to-home-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mid) var(--padding-xl);
+  background-color: var(--color-mediumslateblue);
+  position: absolute;
+  top: 658px;
+  left: calc(50% - 125px);
+  border-radius: var(--br-6xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.back-to-home-wrapper:hover {
+  background-color: var(--color-blueviolet);
+}
+.donation-success {
+  width: 100%;
+  height: 1117px;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-mediumslateblue);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 750px) {
+  .thank-you-for1 {
+    font-size: var(--font-size-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .thank-you-for1 {
+    font-size: var(--font-size-5xl);
+  }
+}
